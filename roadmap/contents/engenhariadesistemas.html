@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Illusion Roadmaps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f1a;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f1a;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .auth-buttons button {
+      background: transparent;
+      border: 1px solid #ccc;
+      color: white;
+      padding: 6px 12px;
+      margin-left: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .main-title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .main-title h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #9333ea, #3b82f6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .main-title p {
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    .roadmap-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .step {
+      background: linear-gradient(to right, #9333ea, #3b82f6);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      min-width: 220px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .step:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .roadmap-grid {
+        gap: 15px;
+      }
+
+      .step {
+        min-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../Imagens/imagem_2025-04-11_223746491-removebg-preview.png" alt="Illusion Roadmaps" style="height: 60px; vertical-align: middle;">
+    </div>
+    <nav>
+      <a href="../roadmaps.html">Roadmaps</a>
+      <a href="#">Comunidade</a>
+      <a href="#">Créditos</a>
+    </nav>
+    <div class="auth-buttons">
+      <button>Cadastrar-se</button>
+      <button>Acessar minha conta</button>
+    </div>
+  </header>
+
+  <div class="main-title">
+    <h1>Illusion Roadmaps</h1>
+    <p>Conteúdos de Desenvolvimento Web</p>
+  </div>
+
+  <div class="roadmap-grid">
+    <div class="step">
+      <a href="conteudos/engenharia_de_sistemas/engenharia-software.html" style="color: inherit; text-decoration: none;">
+        Engenharia de Software
+      </a>
+    </div>
+    <div class="step">
+      <a href="conteudos/engenharia_de_sistemas/engenharia-de-hardware.html" style="color: inherit; text-decoration: none;">
+        Engenharia de Hardware
+      </a>
+    </div>
+    <div class="step">
+      <a href="conteudos/engenharia_de_sistemas/sistemas-embarcados.html" style="color: inherit; text-decoration: none;">
+        Sistemas Embarcados
+      </a>
+    </div>
+    <div class="step">
+      <a href="conteudos/engenharia_de_sistemas/integraçao-e-validação.html" style="color: inherit; text-decoration: none;">
+        Integração e Validação
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
